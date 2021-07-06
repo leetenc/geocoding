@@ -25,5 +25,13 @@
 </table>
 
 <br>
-
 <%= link_to 'New Flat', new_flat_path %>
+<br><hr>
+<div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"   <!-- this set the dataset markers(in json) from @marker  -->
+>
+<!-- below should work too  -->
+<!-- data-mapbox-api-key="<%#= ENV['MAPBOX_API_KEY'] %>" -->
+</div>
+
